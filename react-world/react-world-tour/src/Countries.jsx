@@ -19,7 +19,7 @@ const Countries = () => {
       <h1>{count}</h1>
       <button onClick={()=>handleChangeAmout()}>count</button>
       <h3>countries:{countries.length}</h3>
-      {countries.slice(0, 7).map(country => (
+      {countries.map(country => (
         <Country country={country}></Country>
       ))}
     </div>
